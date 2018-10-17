@@ -1,11 +1,11 @@
-package iprogr.constructionFirm.controllers;
+package iprogr.constructionFirm.service;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class ContactsController {
-    @GetMapping("/contacts")
+public class CatalogController {
+    @GetMapping("/catalog")
     public String greeting() {
-        return "contacts";
+        return "catalog";
     }
 }

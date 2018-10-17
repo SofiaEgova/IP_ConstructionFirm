@@ -59,3 +59,17 @@ a:hover {
     width: 100%;
     font-weight: bold;
 }
+
+button{
+    text-decoration: none;
+    background-color: #909090;
+    color: #fff;
+    padding: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+    border-left: 5px solid #33ADFF;
+}
+
+button:hover {
+    background-color: #33ADFF;
+}

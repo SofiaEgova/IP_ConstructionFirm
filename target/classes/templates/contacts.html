@@ -17,6 +17,15 @@
 </ul>
 <div id="main">
     Контактов нету
+    <div id="message">
+        <form method="post">
+            <br>
+            <textarea type="text" placeholder="Введите сообщение" name="text" cols="100" rows="10" ></textarea> <br>
+            <input type="text" name="sender" placeholder="Напишите майл">
+            <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
 </div>
 <div id="footer">
     Подвал
