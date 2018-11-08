@@ -1,12 +1,14 @@
 package iprogr.constructionFirm.message;
 
+import iprogr.constructionFirm.BaseEntity;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Message {
+public class Message extends BaseEntity {
 
     public enum MessageStatus {
         PENDING("В ожидании ответа"),

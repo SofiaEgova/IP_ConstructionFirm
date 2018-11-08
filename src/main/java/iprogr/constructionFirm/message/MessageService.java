@@ -1,5 +1,6 @@
 package iprogr.constructionFirm.message;
 
+import iprogr.constructionFirm.BaseRepo;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -8,14 +9,14 @@ import java.util.List;
 
 @Service
 public class MessageService {
-    private final MessageRepo messageRepo;
+    private final BaseRepo<Message> messageRepo;
 
     public MessageService(MessageRepo messageRepo) {
         this.messageRepo = messageRepo;
     }
 
-    public List<Message> getAll(){
-        return messageRepo.findAll();
+    public List<Message> getAll() throws IOException{
+        return messageRepo.getAll();
     }
 
     @Transactional
